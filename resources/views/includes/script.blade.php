@@ -1,0 +1,14 @@
+<script src="{{ asset('assets/script/jquery.min.js') }}"></script>
+<script src="{{ asset('assets/script/script.js') }}"></script>
+<script async src="{{ asset('assets/bootstrap/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('assets/bootstrap/js/imagesloaded.min.js') }}"></script>
+<script src="{{ asset('assets/bootstrap/js/parallax.min.js') }}"></script>
+<script src="{{ asset('assets/bootstrap/js/jquery.flexslider-min.js') }}"></script>
+<script async src="{{ asset('assets/bootstrap/js/isotope.min.js') }}"></script>
+<script async src="{{ asset('assets/bootstrap/js/contact-form.js') }}"></script>
+<script async src="{{ asset('assets/bootstrap/js/jquery.progress-counter.js') }}"></script>
+<script async src="{{ asset('assets/bootstrap/js/jquery.tab-accordion.js') }}"></script>
+<script async src="{{ asset('assets/bootstrap/js/bootstrap.popover.min.js') }}"></script>
+<script async src="{{ asset('assets/bootstrap/js/jquery.magnific-popup.min.js') }}"></script>
+<script src="{{ asset('assets/bootstrap/js/social.stream.min.js') }}"></script>
+<script src="{{ asset('assets/bootstrap/js/jquery.slimscroll.min.js') }}"></script>
