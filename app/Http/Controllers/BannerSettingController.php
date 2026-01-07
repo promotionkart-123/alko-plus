@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\BannerSetting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Cache;
 
 
 class BannerSettingController extends Controller
@@ -48,6 +49,7 @@ class BannerSettingController extends Controller
             ['id' => 1],
             ['banner' => $path]
         );
+        Cache::forget('global_banner');
     }
 
     return redirect()->back()->with('success', 'Banner updated successfully.');

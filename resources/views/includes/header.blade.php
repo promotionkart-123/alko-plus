@@ -3,14 +3,29 @@
         <div class="navbar-mini scroll-hide">
             <div class="container">
                 <div class="nav navbar-nav navbar-left">
-                    <span><i class="fa fa-phone"></i>777-000-7376</span>
+                     @if(isset($globalContact) && $globalContact->contact_no)
+                   <span><i class="fa fa-phone"></i>{{ $globalContact->contact_no  }}</span>
+                @else
+                   
+                     <span><i class="fa fa-phone"></i>Null</span>
+                @endif
+                    
                     <hr />
-                    <span><i class="fa fa-envelope"></i>info@alkoplus.com</span>
+                       @if(isset($globalContact) && $globalContact->email)
+                   <span><i class="fa fa-envelope"></i>{{ $globalContact->email  }}</span>
+                @else
+                   
+                     <span><i class="fa fa-envelope"></i>Null</span>
+                @endif
                     <hr />
                     
                     <span>
-                         <i class="fa fa-map-marker"></i>Plot No. 69-70, Sector-17, HSIIDC Industrial Estate,
-                        Bahadurgarh, Haryana-124507, India</span>
+                         @if(isset($globalContact) && $globalContact->address)
+                   <span><i class="fa fa-map-marker"></i>{{ $globalContact->address  }}</span>
+                @else
+                   
+                     <span><i class="fa fa-map-marker"></i>Null</span>
+                @endif
                         <hr /><hr /><hr />
                         <span>
                               @if (Route::has('login'))
