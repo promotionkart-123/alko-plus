@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Admin\AdminHomeController;
+use App\Http\Controllers\Admin\CareerEnqController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\BannerSettingController;
 use App\Http\Controllers\ContactDetailsController;
@@ -28,6 +30,9 @@ Route::get('/products', function () {
 Route::get('/career', function () {
     return view('career');
 })->name('career');
+Route::post('/careers-store', [CareerEnqController::class, 'store'])
+     ->name('careers.store');
+
 Route::get('/catalogue', function () {
     return view('catalogue');
 })->name('catalogue');
@@ -38,9 +43,9 @@ Route::get('/contact-us', function () {
 
 Route::middleware(['auth', 'verified'])->prefix('admin')->group(function () {
 
-    Route::view('/dashboard', 'admin.dashboard')->name('dashboard');
+    Route::get('/dashboard', [AdminHomeController::class, 'index'])->name('dashboard');
     Route::view('/settings', 'admin.pages.settingsPage')->name('admin.settings');
-    Route::view('/career-enquiry', 'admin.pages.careerEnquiry')->name('admin.career-enquiry');
+    Route::get('/career-enquiry', [CareerEnqController::class, 'index'])->name('admin.career-enquiry');
     Route::view('/category', 'admin.pages.category')->name('admin.category');
     Route::view('/products', 'admin.pages.products')->name('admin.products');
     Route::post('/contact-enquiry-store', [ContactEnqController::class, 'store'])->name('contact.store');

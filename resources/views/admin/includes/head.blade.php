@@ -5,4 +5,4 @@
   <link rel="stylesheet" href="{{ asset('assets/admin/vendors/base/vendor.bundle.base.css') }} ">
   <link rel="stylesheet" href="{{ asset('assets/admin/vendors/datatables.net-bs4/dataTables.bootstrap4.css') }} ">
   <link rel="stylesheet" href="{{ asset('assets/admin/css/style.css') }} ">
-  <link rel="shortcut icon" href="{{ asset('assets/admin/images/favicon.png')}}" />
+  <link rel="shortcut icon" href="{{ asset('assets/images/logos/favicon.ico')}}" />

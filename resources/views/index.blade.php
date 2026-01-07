@@ -6,20 +6,22 @@
             <div class="row">
                 <div class="col-md-5" data-anima="fade-left" data-timeline="asc" data-time="1000" data-timeline-time="400">
                     <hr class="space" />
-                    <!-- <h2 class="text-color anima text-m">Alko Plus</h2> -->
                     <h1 class="text-xl text-normal anima">Alko Plus</h1>
                     <p class="anima text-uppercase">
                        Alko Plus is one of the leading Personal Protective Equipment (PPE) manufacturing enterprise and is rated among the finest Indian companies providing high quality PPE.
                     </p>
                     <hr class="space s" />
                     <div class="anima">
-                        <!-- <a href="#" class="btn btn-lg">Building</a><span class="space"></span>
-                        <a href="#" class="btn btn-lg">Construction</a><span class="space"></span> -->
                         <a href="{{route('about-us')}}" class="btn btn-lg btn-border hidden-xs">Read More</a>
                     </div>
                 </div>
                 <div class="col-md-7" data-anima="fade-right" data-time="1100">
-                    <img src="{{ asset('assets/images/image-mans.jpg') }}" alt="" />
+                     @if(isset($globalBanner) && $globalBanner->banner)
+                    <img src="{{ asset($globalBanner->banner) }}" alt="Banner" />
+                @else
+                   
+                    <img src="{{ asset('assets/images/image-mans.jpg') }}" alt="Default Banner" />
+                @endif
                 </div>
             </div>
         </div>

@@ -6,24 +6,39 @@
                 <div class="col-md-4 footer-center text-left">
                     <img width="120" src="/assets/images/logos/Footer-Logo-01.png" alt="" />
                     <hr class="space m" />
-                    <p class="text-s">Plot No. 69-70, Sector-17, HSIIDC Industrial Estate, Bahadurgarh,
-Haryana-124507, India</p>
+                    <p class="text-s"> 
+                        @if(isset($globalContact) && $globalContact->address)
+                          <span><i class="fa fa-map-marker"></i> {{ $globalContact->address  }}</span>
+                        @else
+                         <span><i class="fa fa-map-marker"></i>Null</span>
+                        @endif
+                    </p>
                     <div class="tag-row text-s">
-                        <span>info@alkoplus.com</span>
-                        <span>777-000-7376</span>
+                         @if(isset($globalContact) && $globalContact->contact_no)
+                   <span><i class="fa fa-phone"></i> {{ $globalContact->contact_no  }}</span>
+                @else
+                   
+                     <span><i class="fa fa-phone"></i>Null</span>
+                @endif
+                         @if(isset($globalContact) && $globalContact->email)
+                   <span><i class="fa fa-envelope"></i> {{ $globalContact->email  }}</span>
+                @else
+                   
+                     <span><i class="fa fa-envelope"></i>Null</span>
+                @endif
                     </div>
                     <hr class="space m" />
                     <div class="btn-group social-group btn-group-icons">
-                        <a target="_blank" href="#" data-social="share-facebook">
+                        <a target="_blank" href="https://www.facebook.com/alkoplussafety" data-social="share-facebook">
                             <i class="fa fa-facebook text-xs circle"></i>
                         </a>
-                        <a target="_blank" href="#" data-social="share-twitter">
+                        <a target="_blank" href="https://x.com/ALKOPLUS" data-social="share-twitter">
                             <i class="fa fa-twitter text-xs circle"></i>
                         </a>
-                        <a target="_blank" href="#" data-social="share-google">
-                            <i class="fa fa-google-plus text-xs circle"></i>
+                        <a target="_blank" href="https://www.instagram.com/alkoplus.in/" data-social="share-google">
+                            <i class="fa fa-instagram text-xs circle"></i>
                         </a>
-                        <a target="_blank" href="#" data-social="share-linkedin">
+                        <a target="_blank" href="https://www.linkedin.com/company/79436319/" data-social="share-linkedin">
                             <i class="fa fa-linkedin text-xs circle"></i>
                         </a>
                     </div>

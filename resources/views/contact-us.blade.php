@@ -82,9 +82,12 @@
                         <div class="col-md-6">
                             <ul class="fa-ul">
                                 <li>
-                                    <i class="fa-li fa fa-home"></i>
-                                    Plot No. 69-70, Sector-17, HSIIDC Industrial Estate, Bahadurgarh,
-                                    Haryana-124507, India
+
+                                    @if(isset($globalContact) && $globalContact->address)
+                                        <span><i class="fa-li fa fa-home"></i>{{ $globalContact->address  }}</span>
+                                    @else
+                                        <span><i class="fa-li fa fa-home"></i>Null</span>
+                                    @endif
 
                                 </li>
 
@@ -92,27 +95,40 @@
                         </div>
                         <div class="col-md-6">
                             <ul class="fa-ul">
-                                <li><i class="fa-li fa fa-skype"></i> Alko Plus</li>
-                                <li><i class="fa-li fa fa-headphones"></i> 777-000-7376</li>
-                                <li><i class="fa-li fa fa-envelope-o"></i> info@alkoplus.com</li>
+                                <li>
+                                    @if(isset($globalContact) && $globalContact->contact_no)
+                                        <span><i class="fa-li fa fa-headphones"></i>{{ $globalContact->contact_no  }}</span>
+                                    @else
+                                        <span><i class="fa-li fa fa-headphones"></i>Null</span>
+                                    @endif
+
+                                </li>
+                                <li>
+                                    @if(isset($globalContact) && $globalContact->email)
+                                        <span><i class="fa-li fa fa-envelope-o"></i>{{ $globalContact->email  }}</span>
+                                    @else
+                                        <span><i class="fa-li fa fa-envelope-o"></i>Null</span>
+                                    @endif
+
+                                </li>
                             </ul>
                         </div>
                     </div>
                     <hr class="space m" />
                     <div class="btn-group social-group btn-group-icons">
-                        <a target="_blank" href="#" data-social="share-facebook" data-toggle="tooltip" data-placement="top"
+                        <a target="_blank" href="https://www.facebook.com/alkoplussafety" data-social="share-facebook" data-toggle="tooltip" data-placement="top"
                             title="Facebook">
                             <i class="fa fa-facebook text-s circle"></i>
                         </a>
-                        <a target="_blank" href="#" data-social="share-twitter" data-toggle="tooltip" data-placement="top"
+                        <a target="_blank" href="https://x.com/ALKOPLUS" data-social="share-twitter" data-toggle="tooltip" data-placement="top"
                             title="Twitter">
                             <i class="fa fa-twitter text-s circle"></i>
                         </a>
-                        <a target="_blank" href="#" data-social="share-google" data-toggle="tooltip" data-placement="top"
+                        <a target="_blank" href="https://www.instagram.com/alkoplus.in/" data-social="share-google" data-toggle="tooltip" data-placement="top"
                             title="Google+">
-                            <i class="fa fa-google-plus text-s circle"></i>
+                            <i class="fa fa-instagram text-s circle"></i>
                         </a>
-                        <a target="_blank" href="#" data-social="share-linkedin" data-toggle="tooltip" data-placement="top"
+                        <a target="_blank" href="https://www.linkedin.com/company/79436319/" data-social="share-linkedin" data-toggle="tooltip" data-placement="top"
                             title="LinkedIn">
                             <i class="fa fa-linkedin text-s circle"></i>
                         </a>
