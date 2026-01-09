@@ -6,7 +6,7 @@
             <div class="title-base" style="margin-top: 113.5px;">
                 <hr class="anima">
                 <h1>Catalouge</h1>
-                <p>Home / Catalouge</p>
+                <p><a href="{{ route('home') }}">Home</a>  / Catalouge</p>
             </div>
         </div>
     </div>

@@ -9,7 +9,13 @@
           <li class="nav-item">
             <a class="nav-link" href="{{route('admin.contact-enquiry')}}">
               <i class="mdi mdi-view-headline menu-icon"></i>
-              <span class="menu-title">Enquiry</span>
+              <span class="menu-title">Enquiry </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{route('admin.product-enquiry')}}">
+              <i class="mdi mdi-view-headline menu-icon"></i>
+              <span class="menu-title">Product Enquiry</span>
             </a>
           </li>
           <li class="nav-item">
@@ -22,6 +28,11 @@
             <a class="nav-link" href="{{route('admin.category')}}">
               <i class="mdi mdi-chart-pie menu-icon"></i>
               <span class="menu-title">Category</span>
+            </a>
+          <li class="nav-item">
+            <a class="nav-link" href="{{route('admin.sub-category')}}">
+              <i class="mdi mdi-chart-pie menu-icon"></i>
+              <span class="menu-title">Sub Category</span>
             </a>
           </li>
           <li class="nav-item">
