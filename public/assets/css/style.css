@@ -1,30 +1,6 @@
-
-/*
-------------------------------------------------------------------
-Table of contents
-
-1. Global styles  [Row 126] 
-2. Headers \ Menus [Row 427] 
-3. Side menus [Row 1611] 
-4. Footer [Row 2189] 
-5. Titles [Row 2388] 
-6. Templates [Row 2790] 
-7. Components [Row 2991] 
-8. Thypography [Row 4226] 
-9. Sections [Row 4556] 
-10. Skin white [Row 4806] 
-11. Mobile / responsive [Row 4900] 
-12. IE < 10 [Row 5803] 
--------------------------------------------------------------------
-
-==============================
-GENERAL
-==============================
-*/
-
 body, .adv-img p, .caption-bottom p, .adv-circle .caption p, .advs-box p, .list-blog p {
-    font-family: "Space Grotesk", "sans-serif";
-    font-size: 13px;
+    font-family: "Roboto",Helvetica,Arial,sans-serif;
+    font-size: 15px;
     line-height: 1.42857143;
     color: #4C4C4C;
 }
@@ -549,7 +525,7 @@ VARIOUS
 }
 
 .text-s {
-    font-size: 13px !important;
+    font-size: 18px !important;
     line-height: 18px;
 }
 

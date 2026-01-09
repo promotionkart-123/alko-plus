@@ -73,11 +73,12 @@ i.icon, .fullpage-menu .active i, .navbar-default .navbar-toggle:hover i, .navba
 }
 
 .btn-border:hover, .btn.btn-border:hover, .btn.circle-button.btn-border:hover, .tag-row i {
-    color: #f39f07;
+    color: #000000;
 }
 
 .btn-border:hover i, .white .btn i {
     color: #f39f07 !important;
+    font-weight: 500;
 }
 
 .nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus, .pagination>li:not(.disabled):hover>a i:before, .advs-box-multiple div.circle, .advs-box-multiple div.circle i {
@@ -109,16 +110,18 @@ body div.boxed-border.border-yellow, .pagination li.active a {
 }
 
 .text-color {
-    color: #f39f07;
+    color: #222222;
 }
 
 .circle-button:hover, .btn:hover {
-    border-color: #f39f07 !important;
+    border-color: #000000 !important;
+    color: #000;
 }
 
 .btn-text, html .advs-box .btn-text:after {
-    color: #f39f07;
-    border-color: #f39f07;
+    color: #FF0000;
+    border-color: #FF0000;
+    font-weight: 500;
 }
 
 .white.btn, .white .btn, .white .tag-row a, .header-bootstrap i.icon, .white .tag-row i, .white .advs-box-content h2 a, .white.advs-box-side-img h2 a, .advs-box-side-icon.boxed .icon-box i,
@@ -177,7 +180,9 @@ header .input-group-btn .btn {
 }
 
 .advs-box .advs-box-content p, .advs-box-side-icon p, .maso-order i {
-    color: #7a7a7a;
+    color: #616161;
+    font-size: 17px;
+    font-weight: normal;
 }
 
 .white.btn:not(.btn-border), .white .btn:not(.btn-border) {
@@ -200,7 +205,14 @@ header .input-group-btn .btn {
 
 .advs-box h3 {
     color: #4C4C4C;
-    font-weight: 400;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.advs-box h3:hover {
+    color: #FF0000;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .white ::-webkit-input-placeholder {
@@ -426,16 +438,19 @@ LAYOUT & TYPOGRAPHY
 -------------------------------------------------------------------
 */
 body, p {
-    font-size: 14px;
+    font-size: 17px;
     line-height: 23px;
+    color: #616161;
+    font-weight: normal;
+
 }
 
-body, p, h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+body, h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
 }
 
 .text-normal, .timeline>li>.timeline-label p, .timeline>li>.timeline-label h4, .timeline-title, .form-box p {
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .text-bold, .collapse-button b, #comments h4, #comments h5, .nav-pills>li>a {
@@ -555,7 +570,7 @@ HEADER AND MENUS
     padding-top: 25px;
     padding-bottom: 25px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .navbar-main .btn-search {
@@ -736,7 +751,7 @@ TITLES
 
 [class*=header-] .title-base h1, [class*=header-] .title-icon h2, [class*=header-] .title-icon h1, [class*=header-] .title-base.title-small h2 {
     font-size: 50px;
-    font-weight: 400;
+    font-weight: 700;
     margin-top: 5px;
     position: relative;
 }
@@ -815,6 +830,7 @@ footer {
 }
 
 footer p, footer a, footer li {
+    font-size: 18px;
     opacity: .8;
     font-weight: 400;
 }
@@ -825,7 +841,7 @@ footer a {
 
 footer h3 {
     font-weight: 500;
-    font-size: 16px;
+    font-size: 22px;
     margin-bottom: 22px;
 }
 
@@ -1000,7 +1016,7 @@ table.table:not(.grid-table)>tbody>tr>td, table.table:not(.grid-table)>tbody>tr>
 
 .advs-box .btn-text {
     border: none;
-    font-weight: 400;
+    font-weight: 500 !important;
     position: relative;
 }
 
@@ -1232,9 +1248,12 @@ div.adv-img p {
 }
 
 html body .advs-box-top-icon h3 {
+
     margin-top: 5px;
-    font-weight: 400;
-    font-size: 22px;
+
+    color: #4C4C4C;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .list-items .list-item {

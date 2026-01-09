@@ -18,7 +18,7 @@
               <a href="{{ route('admin.products')}}" style="text-decoration:none;color:white">
                 <div class="card-body">
                     <h5>Total Products</h5>
-                    <h2>{{ $totalProducts ?? 0 }}</h2>
+                    <h2>{{ $products ?? 0 }}</h2>
                 </div>
                 </a>
             </div>
@@ -29,7 +29,7 @@
               <a href="{{ route('admin.category')}}" style="text-decoration:none;color:white">
                 <div class="card-body">
                     <h5>Categories</h5>
-                    <h2>{{ $totalCategories ?? 0 }}</h2>
+                    <h2>{{ $category ?? 0 }}</h2>
                 </div>
                 </a>
             </div>

@@ -39,7 +39,7 @@
                             <p>
                                Our mission at ALKO PLUS is to be a globally respected name in the Personal Protective Equipment (PPE) industry.
                             </p>
-                            <a href="{{ route('about-us') }}" class="btn-text">Read more</a>
+                            <a href="{{ route('about-us') }}" class="btn-text">View more</a>
                         </div>
                     </div>
                 </div>

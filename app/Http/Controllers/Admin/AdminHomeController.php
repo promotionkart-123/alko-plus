@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\Career;
 use App\Models\Contact;
+use App\Models\Products;
 use Illuminate\Http\Request;
 
 class AdminHomeController extends Controller
@@ -16,7 +17,9 @@ class AdminHomeController extends Controller
     {
         $enquiry = Contact::count();
         $career = Career::count();
-        return view('admin.dashboard', compact('enquiry','career'));
+        $products = Products::count();
+        $category = Products::count();
+        return view('admin.dashboard', compact('enquiry','career','products','category'));
     }
 
     /**
